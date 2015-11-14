@@ -15,12 +15,40 @@ public class LaundryDay {
 	static TreeMap<String, Integer> tm = new TreeMap<>();
 
 	public static void main(String[] args) {
-
 		Scanner stdin = new Scanner(System.in);
 		while (stdin.hasNextLine()) {
-			System.out.println(stdin.nextLine());
+			updateBasket(stdin.nextLine());
 		}
 		stdin.close();
+		printBasket();
 	}
 
+	private static void printBasket() {
+		Iterator it = tm.entrySet().iterator();
+		while (it.hasNext()) {
+			Map.Entry set = (Map.Entry) it.next();
+			String k = (String) set.getKey();
+			int count = (int) set.getValue();
+			if (k.contains(" sock")) {
+				if (count >= 2) {
+					System.out.println(count / 2 + "|" + k);
+				}
+				if (count % 2 == 1) {
+					System.out.println("0|" + k);
+				}
+			} else {
+				System.out.println(count + "|" + k);
+			}
+		}
+	}
+
+	private static void updateBasket(String s) {
+		String ip = s.toLowerCase();
+		if (!tm.containsKey(ip)) {
+			tm.put(ip, 1);
+		} else {
+			int count = tm.get(ip);
+			tm.put(ip, count + 1);
+		}
+	}
 }
