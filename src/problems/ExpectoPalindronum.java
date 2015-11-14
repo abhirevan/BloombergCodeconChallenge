@@ -22,38 +22,20 @@ public class ExpectoPalindronum {
 	}
 
 	private static int getPalindromeLength(String ip) {
-		int iplength = ip.length();
-		int remainder = 0;
-		int lp, rp;
-		for (int i = iplength / 2; i >= 0; i--) {
-			if ((iplength % 2) == 1) {
-				// odd
-				lp = i - 1;
-				rp = i + 1;
-			} else {
-				// even
-				lp = i - 1;
-				rp = i;
-			}
-			remainder = checkPalindrome(lp, rp, ip);
-			if (remainder > -1) {
+		int i;
+		for (i = ip.length(); i >= 0; i--) {
+			if (checkPalindrome(ip.substring(0, i))) {
 				break;
 			}
 		}
-		if (remainder == iplength)
-			return iplength + remainder - 1;
-		return iplength + remainder;
+		return 2 * ip.length() - i;
 	}
 
-	private static int checkPalindrome(int lp, int rp, String ip) {
-		while (lp >= 0) {
-			if (ip.charAt(lp) == ip.charAt(rp)) {
-				lp--;
-				rp++;
-			} else {
-				return -1;
-			}
+	private static boolean checkPalindrome(String s) {
+		for (int i = 0, j = s.length() - 1; i <= s.length() / 2 - 1; i++, j--) {
+			if (s.charAt(i) != s.charAt(j))
+				return false;
 		}
-		return ip.length() - rp;
+		return true;
 	}
 }
