@@ -6,3 +6,5 @@ BaseArithmetic.java :
 MugColor.java :
 /doc/MugColor.pdf
 
+ExpectoPalindronum.java :
+/doc/ExpectoPalindronum.pdf
