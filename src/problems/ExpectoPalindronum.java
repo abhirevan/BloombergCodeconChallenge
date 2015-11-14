@@ -11,6 +11,7 @@ package problems;
 import java.util.Scanner;
 
 //Your submission should *ONLY* use the following class name
+
 public class ExpectoPalindronum {
 	public static void main(String[] args) {
 		String ip;
@@ -21,17 +22,36 @@ public class ExpectoPalindronum {
 	}
 
 	private static int getPalindromeLength(String ip) {
-		int palLength = ip.length();
-		int lp = 0, rp = ip.length() - 1;
-		while (lp < rp) {
-			if (ip.charAt(lp) == ip.charAt(rp)) {
-				lp++;
-				rp--;
+		int iplength = ip.length();
+		int remainder = 0;
+		int lp, rp;
+		for (int i = iplength / 2; i >= 0; i--) {
+			if ((iplength % 2) == 1) {
+				// odd
+				lp = i - 1;
+				rp = i + 1;
 			} else {
-				rp--;
-				palLength++;
+				// even
+				lp = i - 1;
+				rp = 1;
+			}
+			remainder = checkPalindrome(lp, rp, ip);
+			if (remainder > -1) {
+				break;
 			}
 		}
-		return palLength;
+		return iplength + remainder;
+	}
+
+	private static int checkPalindrome(int lp, int rp, String ip) {
+		while (lp >= 0) {
+			if (ip.charAt(lp) == ip.charAt(rp)) {
+				lp--;
+				rp++;
+			} else {
+				return -1;
+			}
+		}
+		return ip.length() - rp;
 	}
 }
