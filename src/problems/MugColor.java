@@ -6,7 +6,7 @@ package problems;
 //Version        : Java 1.7.0_75
 //Input for your program will be provided from STDIN
 //Print out all output from your program to STDOUT
-//Problem Statement 
+//Problem Statement /doc/MugColor.pdf
 
 import java.util.*;
 
