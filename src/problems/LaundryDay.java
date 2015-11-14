@@ -12,7 +12,7 @@ import java.util.*;
 
 //Your submission should *ONLY* use the following class name
 public class LaundryDay {
-	static TreeMap<String, Integer> tm = new TreeMap<>();
+	static TreeMap<String, Integer> tm = new TreeMap<>(String.CASE_INSENSITIVE_ORDER);
 
 	public static void main(String[] args) {
 		Scanner stdin = new Scanner(System.in);
@@ -42,8 +42,7 @@ public class LaundryDay {
 		}
 	}
 
-	private static void updateBasket(String s) {
-		String ip = s.toLowerCase();
+	private static void updateBasket(String ip) {
 		if (!tm.containsKey(ip)) {
 			tm.put(ip, 1);
 		} else {
