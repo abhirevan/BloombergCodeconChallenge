@@ -8,3 +8,7 @@ MugColor.java :
 
 ExpectoPalindronum.java :
 /doc/ExpectoPalindronum.pdf
+
+
+ComplianceProblem.java :
+/doc/ComplianceProblem.pdf
