@@ -33,13 +33,15 @@ public class ExpectoPalindronum {
 			} else {
 				// even
 				lp = i - 1;
-				rp = 1;
+				rp = i;
 			}
 			remainder = checkPalindrome(lp, rp, ip);
 			if (remainder > -1) {
 				break;
 			}
 		}
+		if (remainder == iplength)
+			return iplength + remainder - 1;
 		return iplength + remainder;
 	}
 
