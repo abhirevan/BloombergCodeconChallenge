@@ -1,4 +1,8 @@
-BaseArithmetic.java :
+For problem statements
 
-http://codecon.bloomberg.com/download/problem/5975098721118715905
+BaseArithmetic.java :
+/doc/BaseArithmetic.pdf
+
+MugColor.java :
+/doc/MugColor.pdf
 
