@@ -15,7 +15,6 @@ public class MessedUpRugby {
 	static final int MAX_2 = 111;
 
 	public static void main(String[] args) {
-
 		Scanner stdin = new Scanner(System.in);
 		Integer ip = new Integer(stdin.nextLine());
 		stdin.close();
