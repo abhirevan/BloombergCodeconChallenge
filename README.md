@@ -7,19 +7,19 @@ Code licensed under terms of the [MIT License](LICENSE).
 
 
 ## Progress
- * [x] Base Arithmetic [Problem](doc/BaseArithmetic.pdf) [src](src/BaseArithmetic.java)
- * [x] [Expecto Palindronum](src/palindronum.cc)
- * [x] [Mug Color](src/mug.cc)
- * [x] [Laundry Day](src/laundry.cc)
- * [x] [Messed up Rugby](src/rugby.cc)
- * [x] [A Compliance Problem](src/compliance.cc)
- * [x] [Yet Another Compliance Problem](src/compliance2.cc)
- * [ ] Matching Datasets
- * [ ] Matching Datasets++
- * [x] [Finals Spring 2015 - Matching Gloves](src/gloves.cc)
- * [x] [Finals Spring 2015 - Conference Room Scheduler](src/rooms.cc)
- * [x] [Finals Spring 2015 - Golf Course](src/golf.cc)
- * [x] [Finals Spring 2015 - Maze Solver](src/maze.cc)
+ * [x] Base Arithmetic - [Problem](doc/BaseArithmetic.pdf)   [src](src/BaseArithmetic.java)
+ * [x] Expecto Palindronum  - [Problem](doc/ExpectoPalindronum.pdf)   [src](src/ExpectoPalindronum.java)
+ * [x] Mug Color - [Problem](doc/MugColor.pdf)   [src](src/MugColor.java)
+ * [x] Laundry Day - [Problem](doc/LaundryDay.pdf)   [src](src/LaundryDay.java)
+ * [x] Messed up Rugby - [Problem](doc/MessedUpRugby.pdf)   [src](src/MessedUpRugby.java)
+ * [x] A Compliance Problem - [Problem](doc/ComplianceProblem.pdf)   [src](src/ComplianceProblem.java)
+ * [x] Yet Another Compliance Problem - [Problem](doc/AnotherComplianceProblem.pdf)   [src](src/AnotherComplianceProblem.java)
+ * [x] Matching Datasets - [Problem](doc/MatchingDatasets.pdf)   [src](src/MatchingDatasets.java)
+ * [x] Matching Datasets++ - [Problem](doc/MatchingDatasetsPP.pdf)   [src](src/MatchingDatasetsPP.java)
+ * [ ] Finals Spring 2015 - Matching Gloves - [Problem](doc/MatchingGloves.pdf)   [src](src/MatchingGloves.java)
+ * [ ] Finals Spring 2015 - Conference Room Scheduler
+ * [ ] Finals Spring 2015 - Golf Course
+ * [ ] Finals Spring 2015 - Maze Solver
  * [ ] Finals Spring 2015 - Apples and Oranges
  * [ ] Finals Spring 2015 - Galactic Exchange
  * [ ] Finals Spring 2015 - Ring of Fungi
